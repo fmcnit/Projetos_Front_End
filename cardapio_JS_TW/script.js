@@ -169,23 +169,23 @@ addressInput.addEventListener("input", function(event){
 checkOutBtn.addEventListener("click", function(){
   
   
-  // if(!isOpen){
-  //   Toastify({
-  //     text: "Restaurante Fechado",
-  //     duration: 3000,
-  //     destination: "https://github.com/apvarun/toastify-js",
-  //     newWindow: true,
-  //     close: true,
-  //     gravity: "top", // `top` or `bottom`
-  //     position: "center", // `left`, `center` or `right`
-  //     stopOnFocus: true, // Prevents dismissing of toast on hover
-  //     style: {
-  //       background: "red",
-  //     },
-  //     onClick: function () {}, // Callback after click
-  //   }).showToast();
-  //   return
-  // }
+  if(!isOpen){
+    Toastify({
+      text: "Restaurante Fechado",
+      duration: 3000,
+      destination: "https://github.com/apvarun/toastify-js",
+      newWindow: true,
+      close: true,
+      gravity: "top", // `top` or `bottom`
+      position: "center", // `left`, `center` or `right`
+      stopOnFocus: true, // Prevents dismissing of toast on hover
+      style: {
+        background: "red",
+      },
+      onClick: function () {}, // Callback after click
+    }).showToast();
+    return
+  }
   
   if(cart.lenght === 0) {
     return;
